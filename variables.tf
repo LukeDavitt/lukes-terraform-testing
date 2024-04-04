@@ -1,5 +1,5 @@
 variable "instanceName" {
-  default = "qa-test-terraform"
+  default = "ld-test-terraform-fo-sho"
 }
 
 variable "cloudUrl" {
