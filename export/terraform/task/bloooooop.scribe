@@ -1,0 +1,15 @@
+resource "task" "bloooooop" {
+  name = "bloooooop"
+  uuid = "a3c2ce30-041b-4a4b-b600-ac659ef63e71"
+  dateCreated = "2022-10-17T19:55:40.000Z"
+  executeTarget = "resource"
+  labels = [ "dippity", "zippity" ]
+  lastUpdated = "2024-05-15T15:25:43.000Z"
+  options = [
+    {
+      content = { uuid = "58951918-0869-43d8-9cbb-453a27b7cc5e" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
