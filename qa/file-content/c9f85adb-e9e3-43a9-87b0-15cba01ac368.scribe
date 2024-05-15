@@ -1,0 +1,18 @@
+resource "file-content" "c9f85adb-e9e3-43a9-87b0-15cba01ac368" {
+  uuid = "c9f85adb-e9e3-43a9-87b0-15cba01ac368"
+  content = <<EOFSCRIBE
+import json
+newname = "ld-omgchangeme-python-task"
+configspec = morpheus['spec']
+configspec['name'] = newname
+configspec['hostName'] = newname
+configspec['instance']['name'] = newname
+configspec['instance']['hostName'] = newname
+configspec['volumes'][0]['size'] = 80
+newspec = {}
+newspec['spec'] = configspec
+print(json.dumps(newspec))
+EOFSCRIBE
+  dateCreated = "2023-11-30T18:54:33.000Z"
+  lastUpdated = "2023-12-04T20:33:30.000Z"
+}

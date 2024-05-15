@@ -1,0 +1,16 @@
+resource "task" "Ld Python Task" {
+  name = "Ld Python Task"
+  uuid = "aa0d2c66-5c74-44ba-834b-59640fb42cd0"
+  dateCreated = "2023-11-30T18:54:33.000Z"
+  executeTarget = "local"
+  labels = [ "testing", "things", "yup" ]
+  lastUpdated = "2024-05-15T15:44:32.000Z"
+  options = [
+    {
+      content = { uuid = "c9f85adb-e9e3-43a9-87b0-15cba01ac368" }
+      optionType = { code = "pythonScript" }
+    }
+  ]
+  resultType = "json"
+  taskType = { code = "jythonTask" }
+}
